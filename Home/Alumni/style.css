@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    font-family: "Poppins", sans-seri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+header {
+    background-color: ghostwhite;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo .logo-img {
+    width: 100px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logo .name {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-left: 40px;
+}
+
+.nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav .menu {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+.part1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+
+}
+.part2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+.first div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 500px;
+    border-radius: 1.2em;
+
+}
+.part1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 500px;
+    border-radius: 1.2em;
+
+}
+.part2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 500px;
+    border-radius: 1.2em;
+
+}
+.Alumni img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.second{
+    background-color: gainsboro;
+    padding: 25px;
+    margin: 20px;
+    font-size: 1.5em;
+    border: 15px solid grey;
+}
+.second h1{
+    font-size: 2em;
+    font-weight: 500;
+}
+.g1{
+    background-color: gainsboro;
+    padding: 25px;
+    margin: 20px;
+    font-size: 1.5em;
+    border: 15px solid grey;
+}
+.g1 h1{
+    font-size: 2em;
+    font-weight: 500;
+}
+.pad{
+    padding: 150px 0px 0px 0px;
+}

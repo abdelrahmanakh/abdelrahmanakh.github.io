@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-seri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+header{
+    background-color: ghostwhite;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vh 2.5vw;
+}
+.logo {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.logo .name {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 0.5em;
+    padding: 0.5em;
+}
+.main {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(https://lh5.googleusercontent.com/ZQAizEZwZ0HTA9YoLQiHkhVn8yuY_tln33kDNLA9OtPhl1xmZjfLzljr8cTBWD5qEIQ=w2400) no-repeat;
+    background-size: 100vw 30vh;
+    background-attachment: fixed;
+}
+.overview{
+    width: 100vw;
+    border-radius: 0.2vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 122, 89, 0));
+}
+.overview h2{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5vh;
+}
+.overview p{
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+}
+.admin{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: green;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    margin: 0px 20px;
+    border-radius: em;
+    color: black;
+}
+.cards p{
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+.logo .name {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav a {
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 1em;
+}
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(https://lh5.googleusercontent.com/ZQAizEZwZ0HTA9YoLQiHkhVn8yuY_tln33kDNLA9OtPhl1xmZjfLzljr8cTBWD5qEIQ=w2400) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.overview{
+    width: 100vw;
+    border-radius: 0.2em;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 122, 89, 0));
+}
+.overview h2{
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5vh;
+}
+.overview p{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+}
+.admin{
+    margin: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+    color: grey;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards img{
+    width: 370px;
+    height: 370px;
+    border-radius: 0;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    margin: 0px 20px;
+    background-color: gray;
+    border: 15px solid gainsboro;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+.one{
+    margin-left: 800px;
+}
+.two{
+    margin-right: 800px;
+}
+.three{
+    margin-left: 800px;
+}
+.cards p{
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    background-color: gray;
+    
+}
+}
+@media only screen and (min-width: 768px) {
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+.logo .name {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav a {
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 1em;
+}
+}

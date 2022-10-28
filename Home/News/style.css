@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-seri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+header{
+    background-color: ghostwhite;
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vh 2.5vw;
+}
+.logo {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.logo .name {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 0.7em;
+    padding: 0.5em;
+}
+.pad{
+    padding: 58px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    width: 94vw;
+    min-height: 40vh;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid gainsboro;
+    padding: 5px;
+
+}
+.text{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 5px;
+    line-height: 25px;
+    
+}
+.div img{
+    width: 100%;
+    height: 35vh;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+@media only screen and (min-width: 1000px) {
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+.logo .name {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav a {
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 1em;
+}
+.pad{
+    padding: 130px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+    max-width: 94vw;
+    min-height: 30vh;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid gainsboro;
+    padding: 5px;
+
+}
+.text{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 300;
+    padding: 5px;
+    line-height: 40px;
+    
+}
+.div img{
+    max-width: 30%;
+    min-height: 25vh;
+    border-radius: 0.5em;
+}
+}
+@media only screen and (min-width: 768px) {
+.logo-img{
+    width: 100px;
+    height: 100px;
+}
+.logo .name {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.nav a {
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 1em;
+}
+}
