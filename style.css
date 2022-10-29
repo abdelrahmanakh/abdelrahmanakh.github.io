@@ -17,6 +17,7 @@ header{
     align-items: center;
     padding: 0.5vh 2.5vw;
 }
+
 .logo {
     display: flex;
     align-items:center;
@@ -31,25 +32,64 @@ header{
     font-size: 1em;
     font-weight: 500;
 }
-.nav {
+nav{
+    position: fixed;
+    top: 0;
+    right: -9999px;
+    width: 100vw;
+    height: 100%;
+    background-color: whitesmoke;
+    border-left: 2px solid gainsboro;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0.25);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
-.nav a {
-    text-decoration: none;
+nav a{
+    padding: 20px;
+    width: 100vw;
+    font-size: 30px;
+    font-weight: 700;
     color: black;
-    font-weight: 500;
-    font-size: 0.5em;
-    padding: 0.5em;
+    border-bottom: 7px solid gainsboro;
+}
+nav a:hover{
+    background-color: gainsboro;
+}
+.navbar_open{
+    right: 0;
+    opacity: 1;
+}
+.container {
+    box-sizing: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+nav .back{
+    display: flex;
+}
+nav .back p{
+    margin-right: 58%;
+}
+nav .back:hover{
+    background-color: whitesmoke;
 }
 .main {
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background: url(https://lh5.googleusercontent.com/ZQAizEZwZ0HTA9YoLQiHkhVn8yuY_tln33kDNLA9OtPhl1xmZjfLzljr8cTBWD5qEIQ=w2400) no-repeat;
-    background-size: 100vw 30vh;
+    background-size: 100vw 40vh;
     background-attachment: fixed;
 }
 .overview{
@@ -87,6 +127,7 @@ header{
 }
 .cards{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }

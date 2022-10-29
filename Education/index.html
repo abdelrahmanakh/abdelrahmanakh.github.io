@@ -23,13 +23,18 @@
         />
         <a href="#" class="name">Qena STEM School</a>
       </div>
-      <nav class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/Alumni/index.html">Alumni</a>
-        <a href="/Staff/index.html">Staff</a>
-        <a href="/Campus/index.html">Campus life</a>
-        <a href="/Education/index.html">Education</a>
-        <a href="/News/index.html">News</a>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav>
+        <a href="/AbdelrahmanAKH.github.io/index.html"> Home </a>
+        <a href="/AbdelrahmanAKH.github.io/Alumni/index.html">Alumni</a>
+        <a href="/AbdelrahmanAKH.github.io/Staff/index.html">Staff</a>
+        <a href="/AbdelrahmanAKH.github.io/Campus/index.html">Campus life</a>
+        <a href="/AbdelrahmanAKH.github.io/Education/index.html">Education</a>
+        <a href="/AbdelrahmanAKH.github.io/News/index.html">News</a>
       </nav>
     </header>
     <section class="pad">
@@ -72,5 +77,10 @@
         </p>
       </div>
     </section>
+    <script>
+      function myFunction(x) {
+        document.querySelector("nav").classList.toggle("navbar_open");
+      }
+    </script>
   </body>
 </html>

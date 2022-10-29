@@ -1,145 +1,395 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    font-family: "Poppins", sans-seri;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+  font-family: "Poppins", sans-seri;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 header {
-    background-color: ghostwhite;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
+  background-color: ghostwhite;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo .logo-img {
-    width: 100px;
-    cursor: pointer;
-    margin-right: 20px;
+  width: 100px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .logo .name {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 1.8em;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.8em;
 }
 
-.nav {
+nav {
+  position: fixed;
+  top: 0;
+  right: -9999px;
+  width: 100vw;
+  height: 100%;
+  background-color: whitesmoke;
+  border-left: 2px solid gainsboro;
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  width: 100vw;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  border-bottom: 7px solid gainsboro;
+}
+nav a:hover {
+  background-color: gainsboro;
+}
+.navbar_open {
+  right: 0;
+  opacity: 1;
+}
+.menu {
+  box-sizing: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+nav .back {
+  display: flex;
+}
+nav .back p {
+  margin-right: 58%;
+}
+nav .back:hover {
+  background-color: whitesmoke;
+}
+body {
+  overflow-x: hidden;
+}
+h2 {
+  font-size: 2em;
+}
+.Alumni {
+  width: 100vw;
+  height: 75vh;
+  padding: 20px;
+  padding-top: 150px;
+  background-color: #333;
+  color: #fff;
+}
+.second-generation {
+  padding: 0 0vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-left: 20px;
+}
+.second-generation::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  flex: 0 0 auto;
+  width: 33vw;
+  height: 50vh;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  background-color: gainsboro;
+  color: #333;
+}
+.card img {
+  width: 60%;
+  height: 100%;
+  object-fit: fill;
+}
+.card p {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 50vh;
+  position: absolute;
+  top: 190;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 1;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+.first-generation {
+  display: flex;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Second-Alumni {
+  padding: 1%;
+  background-color: gainsboro;
+  color: #333;
+}
+.fcard {
+  flex: 0 0 auto;
+  width: 48%;
+  margin-right: 10px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  background-color: #333;
+  color: aliceblue;
+}
+.fcard img {
+  width: 50%;
+  height: 100%;
+  object-fit: fill;
+}
+.fcard p {
+  width: 50%;
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0 5px;
+  }
+  .logo .name {
+    font-size: 0.75em;
+  }
+  .logo .logo-img {
+    width: 15%;
+    height: 100%;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .Alumni {
+    padding: 0 5px;
+    padding-top: 10vh;
+    height: 60vh;
+  }
+  .card {
+    padding: 0.5em;
+    flex-direction: column;
+    width: 80vw;
+    height: 40vh;
+  }
+  .card img {
+    width: 100%;
+    height: 70%;
+  }
+  .card p {
+    height: 30%;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .pre-btn,
+  .nxt-btn {
+    height: 40vh;
+  }
+  .fcard {
+    flex-direction: column;
+  }
+  .fcard img {
+    width: 100%;
+    height: 70%;
+  }
+  .fcard p {
+    height: 30%;
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .card {
+    height: 39vh;
+  }
+  .pre-btn,
+  .nxt-btn {
+    height: 39vh;
+  }
+}
+@media only screen and (width: 540px) {
+  .logo .logo-img {
+    width: 10vw;
+  }
+  .Alumni {
+    padding-top: 11vh;
+  }
+  .card {
+    width: 50vw;
+  }
+}
+@media only screen and (width: 912px) {
+  .logo .logo-img {
+    width: 10vw;
+  }
+  .Alumni {
+    padding-top: 11vh;
+    height: 50vh;
+  }
+  .card {
+    width: 80vw;
+    height: 30vh;
+  }
+  .pre-btn,
+  .nxt-btn {
+    height: 30vh;
+  }
+  .card p {
+    font-size: 1.5em;
+  }
+  .fcard {
+    height: 30vh;
+  }
+  .fcard img {
+    width: 60%;
+  }
+  .fcard p {
+    height: 100%;
     display: flex;
     align-items: center;
-    padding: 10px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
     font-size: 1.2em;
-    padding-left: 40px;
+    width: 40%;
+  }
 }
-
-.nav a:hover {
-    color: rgb(0, 0, 0);
-}
-
-.nav .menu {
-    width: 50px;
-    cursor: pointer;
-    margin-left: 40px;
-}
-
-.first {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
-}
-
-.part1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
-
-}
-.part2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
-}
-.first div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 500px;
-    border-radius: 1.2em;
-
-}
-.part1 div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 500px;
-    border-radius: 1.2em;
-
-}
-.part2 div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    height: 500px;
-    border-radius: 1.2em;
-
-}
-.Alumni img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 10px;
-}
-.second{
-    background-color: gainsboro;
-    padding: 25px;
-    margin: 20px;
+@media only screen and (width: 768px) {
+  .logo .logo-img {
+    width: 10vw;
+  }
+  .logo .name {
     font-size: 1.5em;
-    border: 15px solid grey;
-}
-.second h1{
-    font-size: 2em;
-    font-weight: 500;
-}
-.g1{
-    background-color: gainsboro;
-    padding: 25px;
-    margin: 20px;
+  }
+  .Alumni {
+    padding-top: 11vh;
+    height: 55vh;
+  }
+  .card {
+    width: 60vw;
+    height: 35vh;
+  }
+  .card img {
+    width: 80%;
+  }
+  .pre-btn,
+  .nxt-btn {
+    height: 35vh;
+  }
+  .card p {
     font-size: 1.5em;
-    border: 15px solid grey;
-}
-.g1 h1{
+  }
+  h2 {
     font-size: 2em;
-    font-weight: 500;
+  }
+  .fcard p {
+    font-size: 1.2em;
+  }
 }
-.pad{
-    padding: 150px 0px 0px 0px;
+@media only screen and (width: 820px) {
+  .logo .logo-img {
+    width: 10vw;
+  }
+  .logo .name {
+    font-size: 1.5em;
+  }
+  .Alumni {
+    padding-top: 11vh;
+    height: 55vh;
+  }
+  .card {
+    flex-direction: column;
+    width: 60vw;
+    height: 38vh;
+  }
+  .card img {
+    width: 70%;
+    height: 60%;
+  }
+  .pre-btn,
+  .nxt-btn {
+    height: 38vh;
+  }
+  .card p {
+    width: 100%;
+    height: 30%;
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .fcard p {
+    height: 30%;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .fcard {
+    flex-direction: column;
+  }
+  .fcard img {
+    height: 60%;
+    width: 80%;
+  }
 }
